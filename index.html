@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yolo apparels</title>
+    <link rel="stylesheet" type="text/css" href="./stylesheets/index.css">
+    <script src="./script/index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Kanit:wght@600&family=PT+Sans&family=Rubik:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a id="Top"></a>
+    <div class="nav">
+        <div class="brand">
+            <h1>Yolo</h1><h2>Apparel</h2></div>
+        <div class="nav-items">
+            <div class="Home">
+                <button class="home" onclick="window.location.href='#Top'">    
+                    <span class="hover-underline-animation">Home</span>
+                </button>
+            </div>
+            <div class="Shop">
+                <a href="./pages/shop.html" ><button class="shop">
+                    <span class="hover-underline-animation2">Shop</span>
+                </button></a>
+            </div>
+            <div class="About">
+                <a href="./pages/about.html"><button class="about">
+                    <span class="hover-underline-animation3">about us</span>
+                </button></a>
+            </div>
+            <div class="Contact">
+                <a href="./pages/contact.html"><button class="contact">
+                    <span class="hover-underline-animation4">Contact</span>
+                </button></a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="containers">
+        <div class="Fpage">
+            <div class="open"><h1>20% off <br>For newly customer</h1></div>
+            <div class="bot"><a href="./pages/shop.html" ><button>Shop now</button></a></div>
+        </div>
+        <div class="products"><h1>Products</h1></div>
+        <div class="Spage">
+            
+            <div class="casual">
+                <span>
+                    <img src="./images/Croptop.jpg" alt="">
+                    <h2>Croptops</h2>
+                </span>
+            </div>
+            <div class="summer">             
+                <span> 
+                    <img src="./images/Shorts.jpg" alt="">
+                    <h2>Shorts</h2>
+                </span>  
+            </div>
+            <div class="formal">
+                <span>
+                    <img src="./images/pants.jpg" alt="">
+                    <h2>Pants</h2>
+            </span>
+            </div>
+        </div>
+    </div>
+    <div class="follow">
+        <div>
+            <h1>Follow</h1>
+            <h2>Yolo on instagram</h2>
+            <p>@yoloapparels</p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="pic1">
+            <img src="./images/tops.jpg" alt="">
+        </div>
+        <div class="pic2">
+            <img src="./images/Pants2.jpg" alt="">
+        </div>
+        <div class="pic3">
+            <img src="./images/shorts2.jpeg" alt="">
+        </div>
+        <div class="pic4">
+            <img src="./images/croptopshorts.jpg" alt="">
+        </div>
+        <div class="pic5">
+            <img src="./images/pants3.jpg" alt="">
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="delivery"><h1>Worldwide Shipping</h1></div>
+        <div class="return"><h1>Easy 15days return</h1></div>
+        <div class="quality"><h1>100% Good Quality products</h1></div>
+    </div>
+    <div class="footer3">
+        <div class="subscribe"><h2>Subscribe</h2></div>
+        <div class="form">
+            <input type="text" id="emailInput"class="form__field w-100" placeholder="Email Address">
+            <label for="name" class="form__label"> Email Address </label>
+        </div>
+        <button onclick="subscribe()">Send</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,412 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ecfeff;;
+    height: auto;
+}
+html{scroll-behavior: smooth;}
+.nav{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 10vw;
+    justify-content: center;
+    background-color: #141010;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+
+}
+.nav h1 {
+    text-align: center;
+}
+.brand{
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 5vw;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+.brand h1{
+    order: 1;
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    color:#680747;
+}
+.brand h2{
+    order: 2;
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    color: #c3195d;
+}
+.nav-items{
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 10px;
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+}
+.story,.business,.media {
+    border: none;
+    background: none;
+  }
+  .story span,.business span,.media span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 18px;
+    padding-right: 15px;
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    color: #f70776;
+  }
+  .hover-underline-animation,.hover-underline-animation2,.hover-underline-animation3,.hover-underline-animation4 {
+    position: relative;
+    color: #CCFFCB;
+    padding-bottom: 25px;
+  }
+  
+  .hover-underline-animation:after,.hover-underline-animation2:after,.hover-underline-animation4:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #CCFFCB;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .hover-underline-animation3:after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #CCFFCB;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  .story:hover .hover-underline-animation:after,.business:hover .hover-underline-animation2:after,.media:hover .hover-underline-animation3:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+/*************************** our story**************************/
+.title{
+    width: 95%;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+}
+h1,.Members h1{
+    text-align: center;
+    color: #3b0944;
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+}
+.Story{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 70vw;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 5px, rgba(0, 0, 0, 0.3) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px -5px 0px inset;
+}
+.Story img{
+    order: 1;
+    width: 400px;
+    height: 450px;
+    border: 2px solid black;
+    margin: 10px;
+}
+.Story p{
+    order: 2;
+    width: 50%;
+    margin: 5px;
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color:#141010;
+    text-indent: 50px;
+}
+/******** Business *********/
+.title2,.title3,.title4,.title5{
+    width: 95%;
+    height: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+}
+.Business{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 70vw;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 5px, rgba(0, 0, 0, 0.3) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px -5px 0px inset;
+}
+.Business p{
+    order: 1;
+    margin: 10px;
+    text-align: justify;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color:#141010;
+    text-indent: 50px;
+
+}
+/*******Mission*******/
+.Mission{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 70vw;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 5px, rgba(0, 0, 0, 0.3) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px -5px 0px inset;
+}
+.Mission p{
+    order: 1;
+    margin: 10px;
+    text-align: justify;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color:#141010;
+    text-indent: 50px;
+
+}
+/***********Vision**************/
+.Vision{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 70vw;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 5px, rgba(0, 0, 0, 0.3) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px -5px 0px inset;
+}
+.Vision p{
+    order: 1;
+    margin: 10px;
+    text-align: justify;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color:#141010;
+    text-indent: 50px;
+
+}
+/**************Goal*****************/
+.Goal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 70vw;
+    background-color: white;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 5px, rgba(0, 0, 0, 0.3) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px -5px 0px inset;
+}
+.Goal p{
+    order: 1;
+    margin: 10px;
+    text-align: justify;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color:#141010;
+}
+/***********************Members****************************/
+.MContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 20px;
+
+}
+
+.Mallari{
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 5px, rgba(0, 0, 0, 0.3) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px -5px 0px inset;
+}
+.Mallari img{
+    order: 1;
+    width: 85%;
+    height: 300px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.info{
+    width: 100%;
+    order:2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+}
+.name{
+    order: 1;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+.info p {
+    order:2;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+.socmed{
+    order:3;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+.info button,.info2 button,.info3 button,.info4 button{
+    order:4;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: #313638;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.icon, .icon2,.icon4{
+    width: 26px;
+    height: 26px;
+    fill: #fff;
+  }
+  .info button:hover,.info2 button:hover,.info3 button:hover,.info4 button:hover {
+    background-color: #2753a7;
+  }
+/******************* Roseanne Deang *********************/
+.Deang {
+    order: 2;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 5px, rgba(0, 0, 0, 0.3) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px -5px 0px inset;
+}
+.Deang img,.Flores img,.Gamboa img {
+    order: 1;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    margin: 10px;
+}
+.info2,.info3,.info4 {
+    width: 100%;
+    order:2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-items: center;
+}
+.name2,.name3,.name4 {
+    order: 1;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+.info2 p,.info3 p,.info4 p{
+    order: 2;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+.socmed2,.socmed3,.socmed4{
+    order: 3;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+/************* flores****************/
+.Flores{
+    order: 3;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 5px, rgba(0, 0, 0, 0.3) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px -5px 0px inset;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  a:hover {
+    color: inherit;
+  }
+  
+  a:visited {
+    color: inherit;
+  }
+  /***************Gamboa****************/
+  .Gamboa {
+    order: 4;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    width: 50vw;
+    height: auto;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 5px, rgba(0, 0, 0, 0.3) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px -5px 0px inset;
+}
